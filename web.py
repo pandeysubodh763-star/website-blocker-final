@@ -19,7 +19,7 @@ def block_website():#to block
         messagebox.showwarning("Warning", "Please enter a website")
         return
     
-    websites_to_block = [website]
+    websites_to_block = [website] #pATh
     if not website.startswith("www."):
         websites_to_block.append(f"www.{website}")
     elif website.startswith("www."):
