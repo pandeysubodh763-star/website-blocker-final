@@ -13,7 +13,7 @@ else:  # Linux/Unix
 
 redirect_ip = "127.0.0.1"  # Localhost IP to redirect blocked sites to
 
-def block_website():
+def block_website():#to block
     website = entry.get().strip()
     if not website:
         messagebox.showwarning("Warning", "Please enter a website")
