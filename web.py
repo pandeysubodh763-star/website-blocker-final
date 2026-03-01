@@ -50,7 +50,7 @@ def unblock_website():#to unblock
     
     websites_to_unblock = [website]
     if not website.startswith("www."):
-        websites_to_unblock.append(f"www.{website}")
+        websites_to_unblock.append(f"www.{website}")# append
     elif website.startswith("www."):
         websites_to_unblock.append(website[4:])  # Add version without www.
     
