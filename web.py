@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 import platform
 
+
 # Determine hosts file path based on OS
 if platform.system() == "Windows":
     hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
@@ -91,3 +92,4 @@ tk.Button(root, text="Unblock Website", width=20, command=unblock_website).pack(
 tk.Label(root, text="Run as Administrator (or sudo)", fg="red").pack(pady=5)
 
 root.mainloop()
+# features -blocks any website
