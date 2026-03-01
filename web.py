@@ -42,7 +42,7 @@ def block_website():
     except Exception as e:
         messagebox.showerror("Error", f"An error occurred: {e}")
 
-def unblock_website():
+def unblock_website():#to unblock
     website = entry.get().strip()
     if not website:
         messagebox.showwarning("Warning", "Please enter a website")
