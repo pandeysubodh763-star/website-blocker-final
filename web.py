@@ -48,7 +48,11 @@ def unblock_website():#to unblock
         messagebox.showwarning("Warning", "Please enter a website")
         return
     
-    websites_to_unblock = [website]
+    websites_to_unblock = [
+    website,
+    "www." + website,
+    "m." + website
+]
     if not website.startswith("www."):
         websites_to_unblock.append(f"www.{website}")# append
     elif website.startswith("www."):
@@ -66,7 +70,7 @@ def unblock_website():#to unblock
                     removed = True
             file.truncate()
             if removed:
-                messagebox.showinfo("Success", f"{website} (and variants) unblocked")
+                 messagebox.showinfo("Success", f"{website} (and variants) unblocked")
             else:
                 messagebox.showinfo("Info", f"{website} was not blocked")
     except PermissionError:
