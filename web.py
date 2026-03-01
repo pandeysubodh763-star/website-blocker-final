@@ -55,7 +55,7 @@ def unblock_website():#to unblock
         websites_to_unblock.append(website[4:])  # Add version without www.
     
     try:
-        with open(hosts_path, "r+") as file:
+        with open(hosts_path, "r+") as file:#try
             lines = file.readlines()
             file.seek(0)
             removed = False
@@ -72,7 +72,7 @@ def unblock_website():#to unblock
     except PermissionError:
         messagebox.showerror("Error", "Run the program as Administrator (or with sudo on macOS/Linux)!")
     except Exception as e:
-        messagebox.showerror("Error", f"An error occurred: {e}")
+        messagebox.showerror("Error", f"An error occurred: {e}")# info
 
 # GUI Window
 root = tk.Tk()
