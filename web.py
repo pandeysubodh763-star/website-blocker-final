@@ -90,8 +90,8 @@ tk.Label(root, text="Enter website (example: facebook.com)").pack()
 entry = tk.Entry(root, width=30)#entry
 entry.pack(pady=5)
 
-tk.Button(root, text="Block Website", width=20, command=block_website).pack(pady=5)
-tk.Button(root, text="Unblock Website", width=20, command=unblock_website).pack(pady=5)
+tk.Button(root, text="Block Website", width=30, command=block_website).pack(pady=5)
+tk.Button(root, text="Unblock Website", width=30, command=unblock_website).pack(pady=5)
 
 tk.Label(root, text="Run as Administrator (or sudo)", fg="red").pack(pady=5)
 
