@@ -6,7 +6,7 @@ import platform
 # Determine hosts file path based on OS
 if platform.system() == "Windows":
     hosts_path = r"C:\Windows\System32\drivers\etc\hosts"
-elif platform.system() == "Darwin":  # macOS
+elif platform.system() == "Darwin":  
     hosts_path = "/etc/hosts"
 else:  # Linux/Unix
     hosts_path = "/etc/hosts"
