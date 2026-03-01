@@ -22,7 +22,7 @@ def block_website():
     if not website.startswith("www."):
         websites_to_block.append(f"www.{website}")
     elif website.startswith("www."):
-        websites_to_block.append(website[4:])  # Add version without www.
+        websites_to_block.append(website[4:])  
     
     try:
         with open(hosts_path, "r+") as file:
