@@ -83,7 +83,7 @@ root.resizable(False, False)
 tk.Label(root, text="Website Blocker", font=("Arial", 14, "bold")).pack(pady=10)
 tk.Label(root, text="Enter website (example: facebook.com)").pack()
 
-entry = tk.Entry(root, width=30)
+entry = tk.Entry(root, width=30)#entry
 entry.pack(pady=5)
 
 tk.Button(root, text="Block Website", width=20, command=block_website).pack(pady=5)
