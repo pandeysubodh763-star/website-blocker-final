@@ -25,7 +25,7 @@ def block_website():#to block
     elif website.startswith("www."):
         websites_to_block.append(website[4:])  # this program - 
     
-    try:
+    try:#try
         with open(hosts_path, "r+") as file:
             content = file.read()
             added = False
