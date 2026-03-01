@@ -67,7 +67,7 @@ def unblock_website():#to unblock
                 if not any(site in line.split() for site in websites_to_unblock):
                     file.write(line)
                 else:
-                    removed = True
+                    removed = True#def
             file.truncate()
             if removed:
                  messagebox.showinfo("Success", f"{website} (and variants) unblocked")
