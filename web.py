@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import platform
-
+import platform
 
 # Determine hosts file path based on OS
 if platform.system() == "Windows":
